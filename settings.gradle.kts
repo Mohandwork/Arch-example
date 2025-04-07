@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Arch example"
 include(":app")
+include(":shared")
+include(":designsystem")

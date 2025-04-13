@@ -1,6 +1,8 @@
-package com.mo.myapplication.domain.accessability
+package com.mo.myapplication.data
 
 
+import com.mo.myapplication.domain.accessability.AccessibilityDataSource
+import com.mo.myapplication.domain.accessability.AccessibilityRepository
 import javax.inject.Inject
 
 class AccessibilityRepositoryImp @Inject constructor(private val accessibilityDataSource: AccessibilityDataSource) :

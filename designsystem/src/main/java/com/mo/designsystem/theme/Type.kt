@@ -10,8 +10,6 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.sp
-import uk.org.lta.designsystem.R
-
 
 val Roboto = FontFamily(
     Font(R.font.roboto_black, FontWeight.Black, FontStyle.Normal),

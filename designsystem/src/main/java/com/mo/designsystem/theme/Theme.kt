@@ -12,7 +12,6 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
-import uk.org.lta.shared.models.firebase_config.Sponsers
 
 private val LightColorScheme =
     lightColorScheme(
@@ -89,7 +88,6 @@ fun AppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
-    sponsors : ArrayList<Sponsers> = arrayListOf() ,
     content: @Composable () -> Unit,
 ) {
     /**
@@ -109,9 +107,9 @@ fun AppTheme(
      */
     val customColorPalette =
         if (darkTheme) {
-            darkPalette(sponsors)
+            darkPalette()
         } else {
-            lightPalette(sponsors)
+            lightPalette()
         }
 
     CompositionLocalProvider(
